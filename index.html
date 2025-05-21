@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | OnetoMax</title>
+    <title>Unity WebGL Player | One to Max</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=540 height=960></canvas>
+      <canvas id="unity-canvas" width=360 height=640></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">OnetoMax</div>
+        <div id="unity-build-title">One to Max</div>
       </div>
     </div>
     <script>
@@ -63,7 +63,7 @@
         codeUrl: buildUrl + "/OneToMaxWebGl.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "movelinemax",
-        productName: "OnetoMax",
+        productName: "One to Max",
         productVersion: "0.1",
         showBanner: unityShowBanner,
       };
@@ -82,8 +82,8 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "540px";
-        canvas.style.height = "960px";
+        canvas.style.width = "360px";
+        canvas.style.height = "640px";
       }
       loadingBar.style.display = "block";
 
